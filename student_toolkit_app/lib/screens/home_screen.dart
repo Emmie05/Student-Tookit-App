@@ -143,9 +143,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     _buildFeatureCard(
                       context,
-                      title: "Contributors",
+                      title: "Developer Info",
                       description:
-                          "Learn more about the developers of this app.",
+                          "Learn more about the developer of this app.",
                       icon: SvgPicture.asset(
                         'assets/svgs/team2.svg',
                         colorFilter: ColorFilter.mode(
