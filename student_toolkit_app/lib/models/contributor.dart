@@ -1,6 +1,6 @@
 class Contributor {
   final String name;
-  final String department;
+  final String course;
   final String university;
   final String specialization;
   final String cohort;
@@ -9,7 +9,7 @@ class Contributor {
 
   Contributor({
     required this.name,
-    required this.department,
+    required this.course,
     required this.university,
     required this.specialization,
     required this.cohort,

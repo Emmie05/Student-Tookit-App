@@ -26,7 +26,7 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
   final List<Contributor> contributors = [
     Contributor(
       name: "Emmanuel Forster",
-      department: "Electrical & Electronic Engineering",
+      course: "Electrical & Electronic Engineering",
       university: "Fourah Bay College",
       specialization: "Frontend Development",
       cohort: "ALX SE Cohort 22",
@@ -95,7 +95,7 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           CircleAvatar(
-                            radius: 60,
+                            radius: 50,
                             backgroundImage: AssetImage(contributor.imagePath),
                             backgroundColor: Colors.transparent,
                             onBackgroundImageError: (exception, stackTrace) {
@@ -117,7 +117,7 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            contributor.department,
+                            contributor.course,
                             textAlign: TextAlign.center,
                             style: Theme.of(context)
                                 .textTheme
@@ -137,14 +137,13 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
                                 .textTheme
                                 .bodyMedium
                                 ?.copyWith(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w300,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
                                   color:
                                       Theme.of(context).colorScheme.onSurface,
                                 ),
                           ),
-                          const SizedBox(height: 12),
-                          const SizedBox(height: 4),
+                          const SizedBox(height: 8),
                           Text(
                             contributor.specialization,
                             textAlign: TextAlign.center,
@@ -167,11 +166,12 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
                                 .bodyLarge
                                 ?.copyWith(
                                   fontSize: 14,
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.bold,
                                   color:
                                       Theme.of(context).colorScheme.onSurface,
                                 ),
                           ),
+                          const SizedBox(height: 10),
                           _buildSocialButtons(contributor),
                         ],
                       ),
