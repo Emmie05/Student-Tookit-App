@@ -19,7 +19,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   final List<Map<String, String>> onboardingData = [
     {
-      'title': 'EENG Toolkit App',
+      'title': 'Student Toolkit App',
       'description':
           'An all-in-one app for checking GPA and resistor colour codes.',
       'image': 'assets/onboarding_images/onboarding1.jpg',
