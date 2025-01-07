@@ -112,6 +112,7 @@ flutter:
 
   assets:
     - assets/onboarding_images/onboarding1.jpg
+    - assets/onboarding_images/onboarding3.jpg
     - assets/onboarding_images/onboarding7.jpg
     - assets/onboarding_images/onboarding8.jpg
     - assets/images/emmanuel.jpg
@@ -125,6 +126,4 @@ flutter:
     - assets/svgs/resistor2.svg
     - assets/svgs/resistor4.svg
     - assets/svgs/team2.svg
-    - assets/svgs/svg_logo1.svg
     - assets/images/logo.png
-    - assets/images/app.png
