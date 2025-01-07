@@ -27,7 +27,9 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
     Contributor(
       name: "Emmanuel Forster",
       department: "Electrical & Electronic Engineering",
-      major: "Computer & Electronics Major",
+      university: "Fourah Bay College",
+      specialization: "Frontend Development",
+      cohort: "ALX SE Cohort 22",
       imagePath: "assets/images/emmanuel.jpg",
       socialLinks: {
         'linkedin': "https://www.linkedin.com/in/emmanuel-forster-3ab072296",
@@ -75,7 +77,7 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
                 crossAxisCount: constraints.maxWidth < 600 ? 1 : 2,
                 mainAxisSpacing: 12,
                 crossAxisSpacing: 12,
-                childAspectRatio: constraints.maxWidth < 600 ? 1.3 : 1.2,
+                childAspectRatio: constraints.maxWidth < 600 ? 1.05 : 0.95,
               ),
               itemCount: contributors.length,
               itemBuilder: (context, index) {
@@ -86,61 +88,93 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   elevation: 2,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        CircleAvatar(
-                          radius: 50,
-                          backgroundImage: AssetImage(contributor.imagePath),
-                          backgroundColor: Colors.transparent,
-                          onBackgroundImageError: (exception, stackTrace) {
-                            print(
-                                'Error loading image ${contributor.imagePath}: $exception');
-                          },
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          contributor.name,
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleLarge
-                              ?.copyWith(
-                                fontSize: 18,
-                                color: Theme.of(context).colorScheme.onError,
-                              ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          contributor.department,
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyLarge
-                              ?.copyWith(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                                color: Theme.of(context).colorScheme.onSurface,
-                              ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          contributor.major,
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium
-                              ?.copyWith(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w300,
-                                color: Theme.of(context).colorScheme.onSurface,
-                              ),
-                        ),
-                        const SizedBox(height: 12),
-                        _buildSocialButtons(contributor),
-                      ],
+                  child: SingleChildScrollView(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage(contributor.imagePath),
+                            backgroundColor: Colors.transparent,
+                            onBackgroundImageError: (exception, stackTrace) {
+                              print(
+                                  'Error loading image ${contributor.imagePath}: $exception');
+                            },
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            contributor.name,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge
+                                ?.copyWith(
+                                  fontSize: 18,
+                                  color: Theme.of(context).colorScheme.onError,
+                                ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            contributor.department,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge
+                                ?.copyWith(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
+                                ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            contributor.university,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w300,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
+                                ),
+                          ),
+                          const SizedBox(height: 12),
+                          const SizedBox(height: 4),
+                          Text(
+                            contributor.specialization,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge
+                                ?.copyWith(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
+                                ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            contributor.cohort,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge
+                                ?.copyWith(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
+                                ),
+                          ),
+                          _buildSocialButtons(contributor),
+                        ],
+                      ),
                     ),
                   ),
                 );
