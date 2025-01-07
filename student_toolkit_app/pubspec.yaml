@@ -112,15 +112,8 @@ flutter:
 
   assets:
     - assets/onboarding_images/onboarding1.jpg
-    - assets/onboarding_images/onboarding2.jpg
-    - assets/onboarding_images/onboarding3.jpg
-    - assets/onboarding_images/onboarding4.jpg
-    - assets/onboarding_images/onboarding5.jpg
-    - assets/onboarding_images/onboarding6.jpg
     - assets/onboarding_images/onboarding7.jpg
     - assets/onboarding_images/onboarding8.jpg
-    - assets/onboarding_images/onboarding9.jpg
-    - assets/onboarding_images/main.jpg
     - assets/images/emmanuel.jpg
     - assets/svgs/1.svg
     - assets/svgs/eng.svg
@@ -129,14 +122,9 @@ flutter:
     - assets/svgs/gpa.svg
     - assets/svgs/gpa1.svg
     - assets/svgs/gpa2.svg
-    - assets/svgs/resistor.svg
     - assets/svgs/resistor1.svg
     - assets/svgs/resistor2.svg
-    - assets/svgs/resistor3.svg
     - assets/svgs/resistor4.svg
-    - assets/svgs/resistor5.svg
-    - assets/svgs/team.svg
-    - assets/svgs/team1.svg
     - assets/svgs/team2.svg
     - assets/svgs/svg_logo1.svg
     - assets/images/logo.png
