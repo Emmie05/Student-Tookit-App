@@ -49,17 +49,29 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> _initializeAnalytics() async {
-    await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
+    try {
+      await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
+
+      // Test event to verify analytics is working
+      await FirebaseAnalytics.instance.logEvent(
+        name: 'app_launch',
+        parameters: {
+          'timestamp': DateTime.now().toIso8601String(),
+        },
+      );
+
+      debugPrint('✅ Firebase Analytics initialized successfully');
+
+      // Verify settings
+      final collectionEnabled = await FirebaseAnalytics.instance.isSupported();
+      debugPrint('📊 Analytics Collection Enabled: $collectionEnabled');
+    } catch (e) {
+      debugPrint('❌ Firebase Analytics Error: $e');
+    }
 
     // Add this measurement ID initialization
     await FirebaseAnalytics.instance.setConsent(
       analyticsStorageConsentGranted: true,
-    );
-
-    // Optional: Set user properties
-    await FirebaseAnalytics.instance.setUserProperty(
-      name: 'app_version',
-      value: '1.0.1',
     );
   }
 
@@ -96,8 +108,7 @@ class _SplashScreenState extends State<SplashScreen> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool isFirstRun = prefs.getBool('isFirstRun') ?? true;
 
-    await Future.delayed(
-        const Duration(seconds: 1)); // Reduce splash screen display time
+    await Future.delayed(const Duration(seconds: 1));
     FlutterNativeSplash.remove();
     Navigator.pushReplacement(
       context,
@@ -121,7 +132,7 @@ class _SplashScreenState extends State<SplashScreen> {
               'assets/svgs/eng2.svg',
               colorFilter: isDarkMode
                   ? const ColorFilter.mode(Colors.white, BlendMode.srcIn)
-                  : null, // Adjust SVG color
+                  : null,
               width: 150,
               height: 150,
             ),

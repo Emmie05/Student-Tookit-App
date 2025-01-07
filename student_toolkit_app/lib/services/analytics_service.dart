@@ -1,4 +1,5 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:flutter/material.dart';
 
 class AnalyticsService {
   final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
@@ -29,20 +30,31 @@ class AnalyticsService {
     required String screenName,
     String? screenClass,
   }) async {
-    await _analytics.logScreenView(
-      screenName: screenName,
-      screenClass: screenClass,
-    );
+    try {
+      await _analytics.logScreenView(
+        screenName: screenName,
+        screenClass: screenClass,
+      );
+      debugPrint(
+          '📊 Analytics - Screen View: $screenName, Class: $screenClass');
+    } catch (e) {
+      debugPrint('❌ Analytics Error (Screen View): $e');
+    }
   }
 
   Future<void> logEvent({
     required String name,
     Map<String, dynamic>? parameters,
   }) async {
-    await _analytics.logEvent(
-      name: name,
-      parameters: parameters,
-    );
+    try {
+      await _analytics.logEvent(
+        name: name,
+        parameters: parameters,
+      );
+      debugPrint('📊 Analytics - Event: $name, Params: $parameters');
+    } catch (e) {
+      debugPrint('❌ Analytics Error (Event): $e');
+    }
   }
 
   // Custom methods for specific events
@@ -59,6 +71,8 @@ class AnalyticsService {
         'gpa_result': gpaResult,
       },
     );
+    debugPrint(
+        '📊 Analytics - GPA Calculation: Courses: $numberOfCourses, System: $gradingSystem, Result: $gpaResult');
   }
 
   Future<void> logResistanceCalculation({
@@ -74,6 +88,8 @@ class AnalyticsService {
         'resistance_result': result,
       },
     );
+    debugPrint(
+        '📊 Analytics - Resistance Calculation: Bands: $numberOfBands, Colors: ${colors.join(',')}, Result: $result');
   }
 
   Future<void> logThemeChange({required String newTheme}) async {
@@ -81,6 +97,7 @@ class AnalyticsService {
       name: changeTheme,
       parameters: {'new_theme': newTheme},
     );
+    debugPrint('📊 Analytics - Theme Change: New Theme: $newTheme');
   }
 
   Future<void> logContributorSocialClick({
@@ -94,6 +111,8 @@ class AnalyticsService {
         'platform': platform,
       },
     );
+    debugPrint(
+        '📊 Analytics - Contributor Social Click: Name: $contributorName, Platform: $platform');
   }
 
   Future<void> logGradingSystemChange({required String newSystem}) async {
@@ -101,6 +120,7 @@ class AnalyticsService {
       name: changeGradingSystem,
       parameters: {'new_system': newSystem},
     );
+    debugPrint('📊 Analytics - Grading System Change: New System: $newSystem');
   }
 
   Future<void> logResistorBandChange({
@@ -114,6 +134,8 @@ class AnalyticsService {
         'new_color': newColor,
       },
     );
+    debugPrint(
+        '📊 Analytics - Resistor Band Change: Band: $bandNumber, New Color: $newColor');
   }
 
   Future<void> logOnboardingComplete({required int timeSpentSeconds}) async {
@@ -121,5 +143,7 @@ class AnalyticsService {
       name: onboardingComplete,
       parameters: {'time_spent_seconds': timeSpentSeconds},
     );
+    debugPrint(
+        '📊 Analytics - Onboarding Complete: Time Spent: $timeSpentSeconds seconds');
   }
 }
