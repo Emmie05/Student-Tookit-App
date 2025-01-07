@@ -1,8 +1,8 @@
-import 'package:eeng_toolkit/firebase_options.dart';
-import 'package:eeng_toolkit/screens/home_screen.dart';
-import 'package:eeng_toolkit/screens/onboarding_screen.dart';
-import 'package:eeng_toolkit/services/analytics_service.dart';
-import 'package:eeng_toolkit/utils/theme.dart';
+import 'package:student_toolkit_app/firebase_options.dart';
+import 'package:student_toolkit_app/screens/home_screen.dart';
+import 'package:student_toolkit_app/screens/onboarding_screen.dart';
+import 'package:student_toolkit_app/services/analytics_service.dart';
+import 'package:student_toolkit_app/utils/theme.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
