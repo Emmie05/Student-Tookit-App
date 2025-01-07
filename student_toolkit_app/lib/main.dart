@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
     // Optional: Set user properties
     await FirebaseAnalytics.instance.setUserProperty(
       name: 'app_version',
-      value: '1.0.1', // Match your app version
+      value: '1.0.1',
     );
   }
 
