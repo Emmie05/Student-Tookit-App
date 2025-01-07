@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "252426564337",
+    "project_id": "student-toolkit-app-d1344",
+    "storage_bucket": "student-toolkit-app-d1344.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252426564337:android:871d316362f15977f66f50",
+        "android_client_info": {
+          "package_name": "com.alxse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVc-LPLYOAPf9m81DehtLcZCMhleCCSEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252426564337:android:df3f64d983e2c591f66f50",
+        "android_client_info": {
+          "package_name": "com.alxse.student_toolkit_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVc-LPLYOAPf9m81DehtLcZCMhleCCSEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

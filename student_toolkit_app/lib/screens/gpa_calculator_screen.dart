@@ -1,5 +1,6 @@
 import 'package:eeng_toolkit/services/analytics_service.dart';
 import 'package:flutter/material.dart';
+import 'package:student_toolkit_app/services/analytics_service.dart';
 import '../widgets/custom_button.dart';
 
 class GPACalculatorScreen extends StatefulWidget {
