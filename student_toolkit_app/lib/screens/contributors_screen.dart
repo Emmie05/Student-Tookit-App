@@ -36,67 +36,6 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
         'instagram': "https://instagram.com/emm_adams",
       },
     ),
-    Contributor(
-      name: "Abubakarr Kamara",
-      department: "Electrical & Electronic Engineering",
-      major: "Power Major",
-      imagePath: "assets/images/abk.jpg",
-      socialLinks: {
-        'linkedin': "https://www.linkedin.com/in/abu-bakarr-kamara-87a60433a",
-        'github': "https://github.com/PrimeKay",
-        'twitter': "https://twitter.com/",
-        'instagram': "https://instagram.com/bakarr_00",
-      },
-    ),
-    Contributor(
-      name: "Robert L. Kanu",
-      department: "Electrical & Electronic Engineering",
-      major: "Computer & Electronics Major",
-      imagePath: "assets/images/rob.jpg",
-      socialLinks: {
-        'linkedin': "https://linkedin.com/in/",
-        'github': "https://github.com/lrk17",
-        'twitter': "https://twitter.com/",
-        'instagram': "https://instagram.com/drey_577",
-      },
-    ),
-    Contributor(
-      name: "Ahmed Y. Conteh",
-      department: "Electrical & Electronic Engineering",
-      major: "Power Major",
-      imagePath: "assets/images/ahmed1.jpg",
-      socialLinks: {
-        'linkedin': "https://www.linkedin.com/in/ahmed-yatta-conteh-029a57299",
-        'github': "https://github.com/Lebron002",
-        'instagram': "https://instagram.com/man_like_lebron",
-        'facebook':
-            "https://www.facebook.com/share/15dSksH1kv/?mibextid=LQQJ4d",
-      },
-    ),
-    Contributor(
-      name: "Johnimac Kelly",
-      department: "Electrical & Electronic Engineering",
-      major: "Power Major",
-      imagePath: "assets/images/jmac.jpg",
-      socialLinks: {
-        'linkedin': "https://www.linkedin.com/in/johnimac-kelly-312a26297",
-        'github': "https://github.com/",
-        'twitter': "https://twitter.com/johnimackelly",
-        'instagram': "https://instagram.com/johnimackelly",
-      },
-    ),
-    Contributor(
-      name: "Patrick Sam",
-      department: "Electrical & Electronic Engineering",
-      major: "Power Major",
-      imagePath: "assets/images/pato.jpg",
-      socialLinks: {
-        'linkedin': "https://linkedin.com/in/",
-        'github': "https://github.com/",
-        'twitter': "https://twitter.com/",
-        'instagram': "https://instagram.com/",
-      },
-    ),
   ];
 
   Future<void> _launchURL(
