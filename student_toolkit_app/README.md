@@ -1,25 +1,37 @@
-# Student Toolkit App
+# Student Toolkit
 
 ![App Logo](assets/images/logo.png)
 
 ## 📱 Overview
 
-Student Toolkit is a comprehensive Flutter-based mobile application designed specifically for engineering students. It serves as an all-in-one academic toolkit that helps students with various calculations and academic tools frequently used in engineering studies.
+Student Toolkit is a comprehensive mobile application designed specifically for engineering students at the University of Sierra Leone and other institutions. This app serves as an all-in-one academic toolkit that helps students with various calculations and academic tools frequently used in engineering studies.
 
 ## ✨ Features
 
 ### 🎯 Key Features
-- **Resistor Color Code Calculator**: Quick and accurate resistance calculations
-- **GPA Calculator**: Calculate your GPA with support for different grading systems 
-- **Dark/Light Theme**: Comfortable viewing in any lighting condition
-- **Intuitive UI**: User-friendly interface with modern design
-- **Cross-Platform**: Works seamlessly on both Android and iOS
+- **GPA Calculator**: 
+  - Calculates GPA based on the University of Sierra Leone grading scale
+  - Supports multiple courses with different credit hours
+  - Provides clear grade point assignments
+- **Resistor Color Code Calculator**:
+  - Supports 3-band and 4-band resistors
+  - Real-time resistance calculation
+  - Comprehensive color code reference
+  - Easy-to-use interface with visual color selection
+  - Includes tolerance band calculation
+
+- **User Interface**:
+  - Dark/Light theme support
+  - Intuitive navigation
+  - Responsive design
+  - Smooth animations
+  - Onboarding tutorial for new users
 
 ### 🛠 Technical Features
 - Firebase Analytics integration for usage tracking
 - Responsive design that adapts to different screen sizes
-- Offline functionality
-- Custom theme implementation
+- Offline functionality - no internet required for calculations
+- Custom theme implementation with system theme detection
 - Persistent settings storage
 
 ## 🚀 Technologies Used
@@ -33,26 +45,38 @@ Student Toolkit is a comprehensive Flutter-based mobile application designed spe
 - **UI Components**: Material Design, Custom Widgets
 - **Version Control**: Git
 
-## 📸 Screenshots
+## 📸 App Screenshots
 
-[Insert key screenshots of your app here]
+[Screenshots will be added in future updates]
 
-## 🎯 Purpose
+## 🎯 Project Context
 
-This project was developed as my final Webstack Portfolio Project for the ALX Software Engineering Program (Cohort 22), specializing in Frontend Development. It demonstrates the practical application of:
+This project was developed as my final Webstack Portfolio Project for the ALX Software Engineering Program (Cohort 22), specializing in Frontend Development. It showcases:
 
 - Modern UI/UX design principles
 - Clean architecture and code organization
 - State management in Flutter
 - Firebase integration
 - Analytics implementation
-- Cross-platform development
+- Cross-platform development capabilities
+
+## ⚙️ Current Release
+
+- Platform: Android Only
+- Distribution: APK file (Play Store release planned for future)
+- Version: 1.0.0
+- Status: Beta Release
 
 ## 🛠️ Installation
 
-1. Clone the repository:
+1. Download the APK file from the releases section
+2. Enable "Install from Unknown Sources" in your Android settings
+3. Install the APK
+4. Grant required permissions when prompted
+
+For developers:
 ```bash
-git clone https://github.com/Emmie05/Student-Toolkit.git
+git clone https://github.com/Emmie05/Student-Tookit-App.git
 ```
 
 2. Install dependencies:
