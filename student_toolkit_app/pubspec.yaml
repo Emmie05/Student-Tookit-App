@@ -67,13 +67,11 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
-flutter_launcher_icons:
+flutter_icons:
   android: true
   ios: true
-  image_path: "assets/onboarding_images/onboarding7.jpg"  # Make sure this path points to your new logo
-  adaptive_icon_background: "#ffffff"  # Optional: for adaptive icons on Android
-  adaptive_icon_foreground: "assets/onboarding_images/onboarding7.jpg"  # Optional: for adaptive icons on Android
-
+  image_path: "assets/onboarding_images/onboarding7.jpg"
+  
 # The following section is specific to Flutter packages.
 flutter:
 
