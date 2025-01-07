@@ -64,7 +64,7 @@ class _ContributorsScreenState extends State<ContributorsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Contributors"),
+        title: const Text("Developer Info"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
