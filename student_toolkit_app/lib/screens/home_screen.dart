@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 34,
             ),
             const SizedBox(width: 14),
-            const Text("EENG Toolkit"),
+            const Text("Student Toolkit"),
           ],
         ),
         centerTitle: true,
