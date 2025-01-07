@@ -1,6 +1,6 @@
 # Student Toolkit
 
-![App Logo](assets/images/logo.png)
+![App Logo](assets/svgs/eng.svg)
 
 ## 📱 Overview
 
