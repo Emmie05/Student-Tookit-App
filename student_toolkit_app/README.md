@@ -69,7 +69,7 @@ This project was developed as my final Webstack Portfolio Project for the ALX So
 
 ## 📥 Download
 
-[![Download APK](https://img.shields.io/github/v/release/Emmie05/Student-Toolkit-App?color=blue&label=Download&logo=android)](https://github.com/Emmie05/Student-Toolkit-App/releases/latest/download/app-release.apk)
+[![Download APK](https://img.shields.io/github/v/release/Emmie05/Student-Toolkit-App?color=blue&label=Download&logo=android)](https://github.com/Emmie05/Student-Tookit-App/blob/e29a546aadfefb480f1225c1bfbea0b973311ae9/StudentToolkit.apk)
 
 ### Installation Instructions
 1. Download the APK file from the link above
