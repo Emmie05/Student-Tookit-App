@@ -1,4 +1,4 @@
-# Student Toolkit
+# Student Toolkit App
 
 ![App Logo](assets/svgs/eng.svg)
 
