@@ -1,4 +1,4 @@
-# Student Toolkit
+# Student Toolkit App
 
 ![App Logo](assets/svgs/eng.svg)
 
@@ -139,5 +139,5 @@ Current Version: 1.0.0
 Status: Active Development
 
 ---
-© 2024 Emmanuel Forster. All Rights Reserved.
-````
+© 2025 Emmanuel Forster. All Rights Reserved.
+
