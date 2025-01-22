@@ -1,10 +1,10 @@
 # Student Toolkit App
 
-![App Logo](student_toolkit_app/assets/svgs/eng.svg)
+![App Logo](assets/svgs/eng.svg)
 
 ## 📱 Overview
 
-Student Toolkit is a comprehensive mobile application designed specifically for engineering students at the University of Sierra Leone and other institutions. This app serves as an all-in-one academic toolkit that helps students with various calculations and academic tools frequently used in engineering studies.
+Student Toolkit is a comprehensive mobile application designed for students, especially engineering students. This app serves as an all-in-one academic toolkit that helps students with various calculations and academic tools frequently used in engineering studies.
 
 ## ✨ Features
 
@@ -13,11 +13,11 @@ Student Toolkit is a comprehensive mobile application designed specifically for 
   - Calculates GPA based on the University of Sierra Leone grading scale
   - Supports multiple courses with different credit hours
   - Provides clear grade point assignments
-- **Resistor Color Code Calculator**:
+- **Resistor Colour Code Calculator**:
   - Supports 3-band and 4-band resistors
   - Real-time resistance calculation
-  - Comprehensive color code reference
-  - Easy-to-use interface with visual color selection
+  - Comprehensive colour code reference
+  - Easy-to-use interface with visual colour selection
   - Includes tolerance band calculation
 
 - **User Interface**:
@@ -32,7 +32,6 @@ Student Toolkit is a comprehensive mobile application designed specifically for 
 - Responsive design that adapts to different screen sizes
 - Offline functionality - no internet required for calculations
 - Custom theme implementation with system theme detection
-- Persistent settings storage
 
 ## 🚀 Technologies Used
 
@@ -47,7 +46,7 @@ Student Toolkit is a comprehensive mobile application designed specifically for 
 
 ## 📸 App Screenshots
 
-[Screenshots will be added in future updates]
+![App Screenshot](student_toolkit_app\assets\app_screenshot\colorcode.jpg)
 
 ## 🎯 Project Context
 
@@ -69,7 +68,7 @@ This project was developed as my final Webstack Portfolio Project for the ALX So
 
 ## 📥 Download
 
-[![Download APK](https://img.shields.io/github/v/release/Emmie05/Student-Toolkit-App?color=blue&label=Download&logo=android)](https://github.com/Emmie05/Student-Tookit-App/blob/e29a546aadfefb480f1225c1bfbea0b973311ae9/StudentToolkit.apk)
+[![Download APK](https://img.shields.io/github/v/release/Emmie05/Student-Toolkit-App?colour=blue&label=Download&logo=android)](https://github.com/Emmie05/Student-Tookit-App/blob/e29a546aadfefb480f1225c1bfbea0b973311ae9/StudentToolkit.apk)
 
 ### Installation Instructions
 1. Download the APK file from the link above
@@ -81,6 +80,7 @@ This project was developed as my final Webstack Portfolio Project for the ALX So
 5. Launch Student Toolkit
 
 **Note**: This app is currently available for Android devices only.
+
 
 ## 🛠️ Installation
 
@@ -125,7 +125,7 @@ To use Firebase services:
 ## 🙏 Acknowledgments
 
 - ALX Software Engineering Program
-- All testers
+- All testers (Collegues at Fourah Bay College)
 
 ## 📊 Project Status
 

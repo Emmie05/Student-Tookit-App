@@ -46,7 +46,7 @@ Student Toolkit is a comprehensive mobile application designed for students, esp
 
 ## 📸 App Screenshots
 
-[Screenshots will be added in future updates]
+![App Screenshot](student_toolkit_app\assets\app_screenshot\colorcode.jpg)
 
 ## 🎯 Project Context
 
