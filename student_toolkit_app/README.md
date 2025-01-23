@@ -59,35 +59,10 @@ This project was developed as my final Webstack Portfolio Project for the ALX So
 - Analytics implementation
 - Cross-platform development capabilities
 
-## ⚙️ Current Release
-
-- Platform: Android Only
-- Distribution: APK file (Play Store release planned for future)
-- Version: 1.0.0
-- Status: Beta Release
-
-## 📥 Download
-
-[![Download APK](https://img.shields.io/github/v/release/Emmie05/Student-Toolkit-App?colour=blue&label=Download&logo=android)](https://github.com/Emmie05/Student-Tookit-App/blob/e29a546aadfefb480f1225c1bfbea0b973311ae9/StudentToolkit.apk)
-
-### Installation Instructions
-1. Download the APK file from the link above
-2. On your Android device, allow installation from unknown sources:
-   - Go to Settings > Security > Install unknown apps
-   - Select your browser and enable "Allow from this source"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Launch Student Toolkit
-
 **Note**: This app is currently available for Android devices only.
 
 
 ## 🛠️ Installation
-
-1. Download the APK file from the releases section
-2. Enable "Install from Unknown Sources" in your Android settings
-3. Install the APK
-4. Grant required permissions when prompted
 
 For developers:
 ```bash
