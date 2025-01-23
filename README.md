@@ -46,11 +46,13 @@ Student Toolkit is a comprehensive mobile application designed for students, esp
 
 ## 📸 App Screenshots
 
-![App Screenshot](student_toolkit_app/assets/app_screenshot/gpa.jpg)
-![App Screenshot](student_toolkit_app/assets/app_screenshot/resistor.jpg)
-![App Screenshot](student_toolkit_app/assets/app_screenshot/home.jpg)
-![App Screenshot](student_toolkit_app/assets/app_screenshot/gpacalculator.jpg)
-![App Screenshot](student_toolkit_app/assets/app_screenshot/colorcode.jpg)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: start;">
+    <img src="student_toolkit_app/assets/app_screenshot/gpa.jpg" width="200" alt="GPA Calculator"/>
+    <img src="student_toolkit_app/assets/app_screenshot/resistor.jpg" width="200" alt="Resistor Calculator"/>
+    <img src="student_toolkit_app/assets/app_screenshot/home.jpg" width="200" alt="Home Screen"/>
+    <img src="student_toolkit_app/assets/app_screenshot/gpacalculator.jpg" width="200" alt="GPA Calculator Interface"/>
+    <img src="student_toolkit_app/assets/app_screenshot/colorcode.jpg" width="200" alt="Color Code Calculator"/>
+</div>
 
 ## 🎯 Project Context
 
